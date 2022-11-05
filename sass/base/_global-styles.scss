@@ -1,0 +1,63 @@
+body {
+  color: $primary-text-color;
+  background-color: $primary-bg-color;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: $max-mobile) {
+    max-width: 425px;
+  }
+
+  @media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $min-desktop) {
+    width: 1200px;
+  }
+}
